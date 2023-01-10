@@ -4,8 +4,6 @@ WORKDIR app/
 
 RUN apt-get update && apt-get upgrade -y
 
-RUN mkdir src/
-
 COPY ./*.py /app/
 
 COPY requirements.txt /app/
