@@ -1,0 +1,13 @@
+version: "3"
+services:
+  tars-outpost:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      TZ: Asia/Tokyo
+    env_file:
+      - .env
