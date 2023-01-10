@@ -15,6 +15,7 @@ async def webhook_endpoint(body=Body(...)):
 
 @app.websocket("/")
 async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
     await manager.connect(websocket)
     try:
         while True:
