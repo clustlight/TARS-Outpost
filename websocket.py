@@ -16,7 +16,7 @@ class ConnectionManager:
         if token == access_token:
             self.connections.append(websocket)
         else:
-            await websocket.close(1011, "Auth failed")
+            await websocket.close(1008, "Auth failed")
 
     def disconnect(self, websocket: WebSocket):
         self.connections.remove(websocket)
