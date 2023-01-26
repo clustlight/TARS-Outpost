@@ -1,5 +1,6 @@
 # TARS-Outpost
 ### TARS Webhook Relay Server
+[![Build Docker Image](https://github.com/quadseed/TARS-Outpost/actions/workflows/build.yml/badge.svg)](https://github.com/quadseed/TARS-Outpost/actions/workflows/build.yml)
 ___
 
 ## Getting Started
