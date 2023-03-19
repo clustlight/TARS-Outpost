@@ -17,6 +17,21 @@ Rename `.env.sample` to `.env` and fill in the required information
 | TOKEN              | Server Token                                  |
 | WEBHOOK_SIGNATURE  | Webhook Signature provided by Twitcasting App |
 
+### Make `docker-compose.yml`
+```yaml
+version: "3"
+services:
+  tars-outpost:
+    image: ghcr.io/quadseed/tars-outpost:latest
+    restart: unless-stopped
+    ports:
+      - ${PORT}:${PORT}
+    environment:
+      TZ: Asia/Tokyo
+    env_file:
+      - .env
+```
+
 ### Run Server
 ```shell
 $ docker-compose up
