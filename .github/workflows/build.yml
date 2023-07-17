@@ -18,7 +18,7 @@ jobs:
         uses: docker/metadata-action@v4
         id: metadata
         with:
-          images: ghcr.io/quadseed/tars-outpost
+          images: ghcr.io/clustlight/tars-outpost
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
