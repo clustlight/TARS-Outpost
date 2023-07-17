@@ -1,6 +1,6 @@
 # TARS-Outpost
 ### TARS Webhook Relay Server
-[![Build Docker Image](https://github.com/quadseed/TARS-Outpost/actions/workflows/build.yml/badge.svg)](https://github.com/quadseed/TARS-Outpost/actions/workflows/build.yml)
+[![Build Docker Image](https://github.com/clustlight/TARS-Outpost/actions/workflows/build.yml/badge.svg)](https://github.com/clustlight/TARS-Outpost/actions/workflows/build.yml)
 ___
 
 ## Getting Started
@@ -22,7 +22,7 @@ Rename `.env.sample` to `.env` and fill in the required information
 version: "3"
 services:
   tars-outpost:
-    image: ghcr.io/quadseed/tars-outpost:latest
+    image: ghcr.io/clustlight/tars-outpost:latest
     restart: unless-stopped
     ports:
       - ${PORT}:${PORT}
