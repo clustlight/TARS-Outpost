@@ -15,7 +15,6 @@ webhook_signature = os.environ.get("WEBHOOK_SIGNATURE")
 
 @app.post("/")
 async def webhook_endpoint(body=Body(...)):
-    print(body)
     if "signature" in body:
         event = body.get("event")
         if event in ('livestart', 'liveend'):
